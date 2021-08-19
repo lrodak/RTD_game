@@ -1,0 +1,27 @@
+body{
+    background-color: darkcyan;
+}
+
+#today{
+    text-align: center;
+    width: auto;
+    display: block;
+}
+
+.settings{
+    background-color: darkgreen;
+    width: 30%;
+    top: 50px;
+}
+
+#temporary_name_label{
+    float: left;
+}
+
+.accept_temporary_name_button{
+    float: left;
+}
+
+.temporary_name_input{
+    float: left;
+}
