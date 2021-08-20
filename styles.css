@@ -1,17 +1,19 @@
 body{
     background-color: darkcyan;
+    display: grid;
 }
 
-#today{
-    text-align: center;
-    width: auto;
+.page{
     display: block;
+    margin-top: 1%;
 }
 
-.settings{
+.settings_panel{
     background-color: darkgreen;
-    width: 30%;
+    width: 32%;
     top: 50px;
+    float: left;
+    margin-left: 1%;
 }
 
 #temporary_name_label{
@@ -22,6 +24,30 @@ body{
     float: left;
 }
 
-.temporary_name_input{
+.battle_panel{
+    width: 32%;
+    min-width: 50px;
+    min-height: 50px;
+    height: 80%;
+    margin-left: 1%;
     float: left;
+    background-color: azure;
+}
+
+.player_panel{
+    width: 32%;
+    min-width: 50px;
+    min-height: 50px;
+    height: 80%;
+    margin-left: 1%;
+    float: left;
+    background-color: chocolate;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
