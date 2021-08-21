@@ -5,7 +5,13 @@ body{
 
 .page{
     display: block;
-    margin-top: 1%;
+    height: 100%;
+    width: 98%;
+    min-height: 800px;
+    min-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blueviolet;
 }
 
 .settings_panel{
@@ -38,7 +44,7 @@ body{
     width: 32%;
     min-width: 50px;
     min-height: 50px;
-    height: 80%;
+    height: 100%;
     margin-left: 1%;
     float: left;
     background-color: chocolate;
@@ -50,4 +56,47 @@ body{
     text-align: center;
     width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.left_player_panel, .right_player_panel{
+    width: 20%;
+    min-width: 50px;
+    height: 100%;
+    min-height: 100px;
+    background-color: blanchedalmond;
+    float: left;
+    display: grid;
+}
+
+.center_player_panel{
+    width: 60%;
+    min-width: 50px;
+    height: 75%;
+    min-height: 50px;
+    float: left;
+    background-color: crimson;
+}
+
+.bottom_player_panel{
+    width: 100%;
+    min-width: 100px;
+    height: 20%;
+    min-height: 100px;
+    float: left;
+    background-color: navy;
+    margin-top: 0;
+}
+
+.player_item{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player_equip_panel{
+    background-color: cadetblue;
+    height: 60%;
 }
