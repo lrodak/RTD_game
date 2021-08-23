@@ -64,7 +64,7 @@ body{
     min-width: 50px;
     height: 100%;
     min-height: 100px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     float: left;
     display: grid;
 }
@@ -75,7 +75,7 @@ body{
     height: 100%;
     min-height: 50px;
     float: left;
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 
 .upper_player_panel{
@@ -87,7 +87,7 @@ body{
     min-width: 100px;
     height: 25%;
     min-height: 100px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     bottom: 0;
     margin-top: 0;
 }
@@ -101,16 +101,39 @@ body{
 .player_inventory_panel{
     width: 100%;
     height: 40%;
-    background-color: khaki;
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    border: 1% solid red;
 }
 
 .player_item{
     width: 70px;
     height: 70px;
+    min-width: 70px;
+    min-height: 70px;
     background-color: black;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+}
+.player_item:hover{
+    background-color: orangered;
+}
+
+.player_inventory_item{
+    background-color: saddlebrown;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+}
+.player_inventory_item:hover{
+    background-color: orangered;
 }
 
 .player_item_hand{
@@ -123,8 +146,12 @@ body{
     left: 10%;
 }
 
+.player_item_hand:hover{
+    background-color: orangered;
+}
+
 .player_equip_panel{
-    background-color: greenyellow;
+    background-color: yellowgreen;
     height: 60%;
     display: block;
 }
