@@ -38,7 +38,6 @@ body{
     margin-left: 1%;
     float: left;
     background-color: azure;
-    display: grid;
 }
 
 .player_panel{
@@ -158,6 +157,7 @@ body{
 
 .player_statistics{
     margin-top: 2%;
+    background-color: darkgoldenrod;
 }
 
 .statistic{
@@ -171,6 +171,63 @@ body{
 .fight_button{
     margin-left: auto;
     margin-right: auto;
-    height: 5%;
-    margin-top: 30px;
+    height: 70%;
+    margin-top: 10px;
+}
+
+.battle{
+    width: 90%;
+    height: 60%;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fight_button_panel{
+    display: grid;
+    min-height: 20px;
+    height: 10%;
+    background-color: yellowgreen;
+}
+
+.skills_panel{
+    height: 30%;
+    min-height: 30px;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.opponet_panel{
+    background-color: darkgray;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.opponent{
+    background-color: bisque;
+    width: 100%;
+    height: 90%;
+}
+
+.opponent_hp{
+    background-color: coral;
+    height: 10%;
+    width: 100%;
+    display: block;
+}
+
+.enemy_statistic{
+    background-color: darkgreen;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.opponent_hp_label{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    background-color: gold;
 }
