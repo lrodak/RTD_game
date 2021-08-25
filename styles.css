@@ -218,16 +218,27 @@ body{
 }
 
 .enemy_statistic{
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     height: 100%;
     width: 50%;
     float: left;
+    font-weight: 600;
+    margin-top: 1%;
 }
 
 .opponent_hp_label{
     text-align: center;
-    margin-left: auto;
+    margin-left: 30%;
     margin-right: auto;
     height: 100%;
     background-color: gold;
+}
+
+.opponent_image{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.enemy_statistic_label{
+    margin-left: 15%;
 }

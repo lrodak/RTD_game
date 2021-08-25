@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <script src="scripts/battleStart.js"></script>
+    <script src="scripts/randomEnemy.js"></script>
 </head>
 <body onload="loadPage()">
     <label class="title">RTD game</label>
@@ -35,15 +36,36 @@
         <div class="battle_panel">
             <div class="fight_button_panel">
                 <button class="fight_button" onclick="battleStart()">Fight!</button>
+                <button class="fight_button" onclick="randomEnemy()">Random enemy</button>
             </div>
             <div class="battle">
                 <div class="opponet_panel">
-                    <div class="opponent"></div>
+                    <div class="opponent">
+                        <img class="opponent_image" src="images/enemy1.png" alt="" width="98%" height="98%">
+                    </div>
                     <div class="opponent_hp">
                         <label class="opponent_hp_label">HP: 100/100</label>
                     </div>
                 </div>
-                <div class="enemy_statistic"></div>
+                <div class="enemy_statistics">
+                    <label class="enemy_statistic_label">Enemy statistics:</label>
+                    <div class="enemy_statistic">
+                        <label>MAX HP:</label>
+                        <label class="statistic" id="enemy_statistic_hp">100</label>
+                    </div>
+                    <div class="enemy_statistic">
+                        <label>Damage:</label>
+                        <label class="statistic" id="enemy_statistic_dmg">1</label>
+                    </div>
+                    <div class="enemy_statistic">
+                        <label>Armour:</label>
+                        <label class="statistic" id="enemy_statistic_armour">0</label>
+                    </div>
+                    <div class="enemy_statistic">
+                        <label>Critical chance:</label>
+                        <label class="statistic" id="enemy_statistic_critical_chance">0%</label>
+                    </div>
+                </div>
             </div>
             <div class="skills_panel">
             </div>
