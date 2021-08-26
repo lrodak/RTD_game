@@ -220,13 +220,14 @@ body{
 .enemy_statistic{
     /* background-color: darkgreen; */
     height: 100%;
-    width: 50%;
+    width: 35%;
     float: left;
     font-weight: 600;
-    margin-top: 1%;
+    margin-top: 2%;
+    margin-left: 15%;
 }
 
-.opponent_hp_label{
+#opponent_hp_label{
     text-align: center;
     margin-left: 30%;
     margin-right: auto;

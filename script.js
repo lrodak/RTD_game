@@ -1,3 +1,3 @@
 function loadPage(){
-    randomEnemy();
+    // randomEnemy();
 }
