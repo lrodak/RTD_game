@@ -7,6 +7,8 @@
     <script src="scripts/battleStart.js"></script>
     <script src="scripts/randomEnemy.js"></script>
     <script src="scripts/randomAvatar.js"></script>
+    <script src="scripts/calculateDamage.js"></script>
+    <script src="scripts/battleWin.js"></script>
 </head>
 <body onload="loadPage()">
     <label class="title">RTD game</label>
@@ -22,7 +24,7 @@
                 </div>
                 <div class="player_statistic" id="player_statistic_dmg">
                     <label>Damage:</label>
-                    <label class="statistic" id="statistic_dmg">1</label>
+                    <label class="statistic" id="statistic_dmg">1-5</label>
                 </div>
                 <div class="player_statistic" id="player_statistic_armour">
                     <label>Armour:</label>
@@ -37,15 +39,15 @@
         <div class="battle_panel">
             <div class="fight_button_panel">
                 <button class="fight_button" onclick="battleStart()">Fight!</button>
-                <button class="fight_button" onclick="randomEnemy()">Random enemy</button>
             </div>
             <div class="battle">
                 <div class="opponet_panel">
                     <div class="opponent">
-                        <img class="opponent_image" src="images/enemy1.png" alt="" width="98%" height="98%">
+                        <img class="opponent_image" id="opponent_image_id" src="images/enemy1.png" alt="" width="98%" height="98%">
                     </div>
                     <div class="opponent_hp">
-                        <label id="opponent_hp_label">HP: 100/100</label>
+                        <label>HP:</label>
+                        <label id="opponent_hp_label">100/100</label>
                     </div>
                 </div>
                 <div class="enemy_statistics">
@@ -70,6 +72,11 @@
             </div>
             <div class="skills_panel">
             </div>
+            <div class="information_panel">
+                <label class="information_dmg" id="dmg_information">You just hit for </label>
+                <label class="information_dmg" id="final_dmg">0</label>
+                <label class="information_dmg">DMG</label>
+            </div>
         </div>
         <div class="player_panel">
             <div class="player_equip_panel">
@@ -85,7 +92,7 @@
                     </div>
                     <div class="bottom_player_panel">
                         <div class="bottom_player_item_panel">
-                            <div class="player_item_hand"></div>
+                            <div class="player_item_hand" id="player_weapon"></div>
                             <div class="player_item_hand"></div>
                         </div>
                     </div>
