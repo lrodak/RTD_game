@@ -19,6 +19,7 @@ body{
     width: 32%;
     top: 50px;
     float: left;
+    display: block;
     margin-left: 1%;
 }
 
@@ -28,6 +29,11 @@ body{
 
 .accept_temporary_name_button{
     float: left;
+}
+
+#temporary_name_input{
+    float: left;
+    margin-left: 2%;
 }
 
 .battle_panel{
@@ -158,6 +164,7 @@ body{
 .player_statistics{
     margin-top: 2%;
     background-color: darkgoldenrod;
+    text-align: center;
 }
 
 .statistic{
@@ -195,6 +202,8 @@ body{
     min-height: 30px;
     width: 100%;
     background-color: cadetblue;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .opponet_panel{
@@ -253,4 +262,16 @@ body{
 
 .information_dmg{
     display: none;
+}
+
+.drop_item{
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
